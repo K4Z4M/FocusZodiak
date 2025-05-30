@@ -1,0 +1,39 @@
+name: Focus
+version: 1.0
+author: kazam
+description: Version modifiée du mode Focus
+main: fr.kazam.focus.Main
+api-version: 1.21
+commands:
+  createLobby:
+    description: Commande pour créer un lobby. Utiliser /createLobby <nom du lobby> <nombre max de joueurs>
+    permision: admin.createLobby
+    aliases: [cl]
+  joinLobby:
+    description: Commande pour rejoindre un lobby. Utiliser /joinLobby <id du lobby>
+    permission: focus:joinLobby.use
+    aliases: [jl]
+  joinTeam:
+    description: Commande pour rejoindre une equipe. Utiliser /joinTeam <nom de l'équipe>
+    permission: focus:joinTeam.use
+    aliases: [jt]
+  startGame:
+    description: Démarre une partie avec le lobby spécifié. Utiliser /startGame <id du lobby> <nombre de point pour gagner> <temps d'une manche>
+    permission: focus:startGame.use
+    aliases: [sg]
+  createArena:
+    description: Créé une arène. Utiliser /createArena <ArenaName> <maxNumberOfPlayer> <hasNightVision> <inGameTime>
+    permission: focus:createArena.use
+    aliases: [ca]
+  addArenaSpawn:
+    description: Ajoute une spawn à l'endroit où vous êtes. Utiliser /addArenaSpawn <id de l'arène>
+    permission: focus:addArenaSpawn.use
+    aliases: [aas]
+  addGloryPointSpawn:
+    description: Ajoute un pot pouvant contenir des points de gloire. utiliser /addGloryPointSpawn <id de l'arène>
+    permission: focus:addGloryPointSpawn.use
+    aliases: [agps]
+  addShopSpawn:
+    description: Ajouter un spawn à l'endroit où vous êtes. Utiliser /addShopSpawn <id de l'arène>
+    permission: focus:addShopSpawn.use
+    aliases: [ass]
